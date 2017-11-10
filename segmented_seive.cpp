@@ -109,7 +109,7 @@ ll segmented_seive(ll a,ll b)
     {
         ll p=visited[i];
         ll j=p*p;
-        if(j<a)j=((a+p-1)/p)*p;
+        if(j<a)j=((a+p-1)/p)*p;//find the next number which is divide by that prime
         for(; j<=b; j+=p)
         {
             arr[j-a]=1;
